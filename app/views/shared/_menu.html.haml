@@ -1,0 +1,21 @@
+/ Following Menu
+.ui.large.top.fixed.hidden.menu
+  .ui.container
+    - @items[:internal_links].each do |item|
+      %a.item{ href: item[0] }= item[1]
+
+    .right.menu
+      - @items[:socials].each do |item|
+        .item
+          %a{ href: item[0], target: "_blank" }
+            %i.big.icon.square{ class: item[1] }
+
+/ Sidebar Menu
+.ui.vertical.inverted.sidebar.menu
+  - @items[:internal_links].each do |item|
+    %a.item{ href: item[0] }= item[1]
+  .item
+    - @items[:socials].each do |item|
+      %a{ href: item[0], target: "_blank" }
+        %i.big.icon.square{ class: item[1] }
+

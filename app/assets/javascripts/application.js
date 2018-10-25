@@ -12,5 +12,5 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require 'dist/semantic'
+//= require semantic-ui
 //= require_tree .
