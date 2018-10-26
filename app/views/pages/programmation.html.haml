@@ -7,7 +7,7 @@
     .ui.middle.aligned.stackable.grid.container
       .row
         .column
-          .ui.styled.accordion
+          .ui.styled.accordion{ style: 'width: 100%' }
             - @programs.each.with_index do |program, index|
               - next if program[:content].empty?
               - active = if not activated then 'active' end
