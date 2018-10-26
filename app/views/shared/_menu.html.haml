@@ -2,7 +2,7 @@
 .ui.large.top.fixed.hidden.menu
   .ui.container
     - @items[:internal_links].each do |item|
-      %a.item{ href: item[0] }= item[1]
+      %a.item{ href: item[0], class: is_current_path(item[0]) && 'active' }= item[1]
 
     .right.menu
       - @items[:socials].each do |item|
@@ -13,7 +13,7 @@
 / Sidebar Menu
 .ui.vertical.inverted.sidebar.menu
   - @items[:internal_links].each do |item|
-    %a.item{ href: item[0] }= item[1]
+    %a.item{ href: item[0], class: is_current_path(item[0]) && 'active' }= item[1]
   .item
     - @items[:socials].each do |item|
       %a{ href: item[0], target: "_blank" }

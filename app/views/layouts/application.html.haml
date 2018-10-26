@@ -19,4 +19,20 @@
 
   %body
     = render partial: 'shared/menu'
-    = yield
+
+    / Page Contents
+    .pusher
+      .ui.inverted.vertical.masthead.center.aligned.segment
+        .ui.container
+          .ui.large.secondary.inverted.pointing.menu
+            %a.toc.item
+              %i.sidebar.icon
+            - @items[:internal_links].each do |item|
+              %a.item{ href: item[0], class: is_current_path(item[0]) && 'active' }= item[1]
+            .right.menu
+              - @items[:socials].each do |item|
+                .item
+                  %a{ href: item[0], target: "_blank" }
+                    %i.big.icon.square{ class: item[1] }
+
+      = yield

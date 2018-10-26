@@ -8,7 +8,8 @@ class ApplicationController < ActionController::Base
   def define_menu_items
     @items = {
       internal_links: [
-        ['#programmation', I18n.t('menu.programmation')],
+        ['/programmation', 'Programmation'],
+        ['/salty_ranked', 'Classée Salée'],
       ],
       socials: [
         ['https://twitter.com/plouftv', :twitter],
