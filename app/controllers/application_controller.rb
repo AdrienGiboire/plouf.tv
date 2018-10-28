@@ -9,7 +9,7 @@ private
     @items = {
       internal_links: [
         ['/programmation', 'Programmation'],
-        ['/salty_ranked', 'Classée Salée'],
+        #['/salty_ranked', 'Classée Salée'],
       ],
       socials: [
         ['https://twitter.com/plouftv', :twitter],
