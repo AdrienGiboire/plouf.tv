@@ -1,7 +1,20 @@
-.ui.container
-  .row
-    .column
+%main
+  %section
+    %article
       - if user_signed_in?
-        go for it
+        %p Merci ! Des choses vont bientôt arriver ici !
       - else
-        = link_to "Sign in with Twitch", user_twitch_omniauth_authorize_path
+        %p
+          Pour l'instant, il n'y pas grand chose ici mais si tu veux être tenu au courant quand des choses sortent, #{link_to "connecte toi avec ton compte twitch", user_twitch_omniauth_authorize_path}.
+        %p Tu seras tenu au courant par email.
+        %p Ça me permet aussi de voir combien de personne ça intéresse, que je ne travaille pas sur quelque chose qui n'intéresse personne ;)
+
+    %article
+      %h2 De quoi parle-t-on ?
+      %p Si tu n'es pas encore familié avec le concept, l'idée est de proposer une interface de pronostic simplifié sur les résultats de mes parties classées pendant mes lives.
+      %p Tu gagnes des points quand tes pronostics sont bons.
+      %p C'est surtout pour le fun et pour frimer quand tu es bon mais dans un futur heureux, ces points serviront à augmenter tes chances lors de tirages au sort pour quoi que ce soit.
+
+    %article
+      %h2 Contact
+      %p Si tu as des questions, n'hésite pas à venir sur un #{link_to "live", "twitch.tv/plouf"} ou sur un autre réseau social, ou encore par email à l'adresse #{link_to "plouf.gaming@sent.com", "mailto:plouf.gaming@sent.com"}.
