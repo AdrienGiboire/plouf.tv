@@ -1,0 +1,7 @@
+.ui.container
+  .row
+    .column
+      - if user_signed_in?
+        go for it
+      - else
+        = link_to "Sign in with Twitch", user_twitch_omniauth_authorize_path

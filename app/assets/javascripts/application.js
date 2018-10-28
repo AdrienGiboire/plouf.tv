@@ -12,5 +12,5 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require semantic-ui
-//= require_tree .
+//= require ./utils
+//= require ./nav

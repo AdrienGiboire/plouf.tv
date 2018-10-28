@@ -1,0 +1,32 @@
+$black: #150C07;
+$blue: #3A96D3;
+$white: white;
+$white-light: rgba($white, 0.7);
+
+$colors:  ("black", $black),
+          ("blue", $blue),
+          ("white", $white);
+
+@each $color-name, $color in $colors {
+  .color-#{$color-name} {
+    color: $color !important;
+  }
+
+  .color-border-#{$color-name} {
+    border: 1px solid $color !important;
+  }
+
+  .color-bg-#{$color-name} {
+    background-color: $color !important;
+  }
+
+  .border-color-#{$color-name} {
+    border-color: $color !important;
+  }
+
+  .pills-#{$color-name} {
+    li:before {
+      background-color: $color !important;
+    }
+  }
+}

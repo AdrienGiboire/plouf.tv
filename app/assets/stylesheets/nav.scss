@@ -1,0 +1,169 @@
+.navigation {
+  height: 70px;
+  background-color: $black;
+  z-index: 2;
+
+  .container {
+    padding: 0;
+  }
+
+  .brand {
+    padding-left: 10px;
+    margin: 0;
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    position: absolute;
+
+    img {
+      max-width: 70px;
+    }
+  }
+
+  nav {
+    float: right;
+    padding-bottom: 10px;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        position: relative;
+        float: left;
+        background-color: $black;
+
+        ul.social-links {
+          list-style-type: none;
+          display: flex;
+          flex-flow: row;
+          justify-content: space-around;
+        }
+
+        a, a:visited {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          line-height: 70px;
+          padding: 0 20px;
+          margin: 0 0;
+          transition: color 0.1s ease;
+          color: $white-light;
+
+          &.active, &:hover {
+            color: $white;
+            background-color: $blue;
+          }
+
+          &.active {
+            font-weight: bold;
+          }
+
+          [class^="socicon-"], [class*=" socicon-"] {
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    .nav-mobile {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $black;
+      height: 70px;
+      width: 70px;
+
+      #nav-toggle {
+        position: absolute;
+        left: 18px;
+        top: 22px;
+        cursor: pointer;
+        padding: 10px 35px 16px 0px;
+
+        span,
+        span:before,
+        span:after {
+          cursor: pointer;
+          border-radius: 1px;
+          height: 5px;
+          width: 35px;
+          background: $white;
+          position: absolute;
+          display: block;
+          content: '';
+          transition: all 300ms ease-in-out;
+        }
+
+        span:before {
+          top: -10px;
+        }
+
+        span:after {
+          bottom: -10px;
+        }
+
+        &.active {
+          span {
+            background-color: transparent;
+          }
+
+          span:before,
+          span:after {
+            top: 0;
+          }
+
+          span:before {
+            transform: rotate(45deg);
+          }
+
+          span:after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navigation {
+    nav {
+      width: 100%;
+      padding: 70px 0 15px;
+
+      ul.nav-list {
+        display: none;
+
+        li {
+          float: none;
+
+          a {
+            padding: 15px;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .nav-mobile {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+
+    [class^="socicon-"], [class*=" socicon-"] {
+      line-height: 70px !important;
+    }
+  }
+}
+

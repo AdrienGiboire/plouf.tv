@@ -32,7 +32,7 @@ class PagesController < ApplicationController
       {
         title: 'Samedi',
         content: [
-          '<strong>19h-23h :</strong> Diablo III - Saison 15',
+          '<strong>15h-18h :</strong> Diablo III - Saison 15',
           'On rush la saison 15 en saisonnier nécromancien',
           '',
           '<strong>19h-23h :</strong> Diablo III - Saison 15',
@@ -42,7 +42,7 @@ class PagesController < ApplicationController
       {
         title: 'Dimanche',
         content: [
-          '<strong>19h-23h :</strong> Diablo III - Saison 15',
+          '<strong>15h-18h :</strong> Diablo III - Saison 15',
           'On rush la saison 15 en saisonnier nécromancien',
           '',
           '<strong>19h-23h :</strong> Diablo III - Saison 15',

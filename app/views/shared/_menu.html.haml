@@ -1,21 +1,21 @@
-/ Following Menu
-.ui.large.top.fixed.hidden.menu
-  .ui.container
-    - @items[:internal_links].each do |item|
-      %a.item{ href: item[0], class: is_current_path(item[0]) && 'active' }= item[1]
+%section.navigation
+  .container
+    .brand
+      = image_tag 'logo.png'
 
-    .right.menu
-      - @items[:socials].each do |item|
-        .item
-          %a{ href: item[0], target: "_blank" }
-            %i.big.icon.square{ class: item[1] }
+    %nav
+      .nav-mobile
+        %a#nav-toggle
+          %span
 
-/ Sidebar Menu
-.ui.vertical.inverted.sidebar.menu
-  - @items[:internal_links].each do |item|
-    %a.item{ href: item[0], class: is_current_path(item[0]) && 'active' }= item[1]
-  .item
-    - @items[:socials].each do |item|
-      %a{ href: item[0], target: "_blank" }
-        %i.big.icon.square{ class: item[1] }
+      %ul.nav-list
+        - @items[:internal_links].each do |item|
+          %li
+            %a{ href: item[0], class: is_current_path(item[0]) && 'active' }= item[1]
 
+        %li
+          %ul.social-links
+            - @items[:socials].each do |item|
+              %li
+                %a{ href: item[0], target: "_blank" }
+                  %i{ class: "socicon-#{item[1]}" }

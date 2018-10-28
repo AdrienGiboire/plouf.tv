@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   before_action :define_menu_items
 
-  private
+private
 
   def define_menu_items
     @items = {
@@ -18,5 +18,11 @@ class ApplicationController < ActionController::Base
         ['https://www.twitch.tv/plouf/', :twitch],
       ],
     }
+  end
+
+protected
+
+  def after_sign_in_path_for(resource)
+    request.env['omniauth.origin'] || stored_location_for(resource) || salty_ranked_path
   end
 end

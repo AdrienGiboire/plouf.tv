@@ -1,20 +1,8 @@
-- activated = nil
-- active = nil
+%main
+  %section
+    - @programs.each.with_index do |program, index|
+      - next if program[:content].empty?
 
-/ Page Contents
-.pusher
-  .ui.vertical.segment
-    .ui.middle.aligned.stackable.grid.container
-      .row
-        .column
-          .ui.styled.accordion{ style: 'width: 100%' }
-            - @programs.each.with_index do |program, index|
-              - next if program[:content].empty?
-              - active = if not activated then 'active' end
-              - activated ||= if active and not activated then true end
-
-              .title{ class: active }
-                %i.dropdown.icon
-                %strong= program[:title]
-              .content{ class: active }
-                %p= program[:content].join('</p><p>').html_safe
+      %article.one-third
+        %strong= program[:title]
+        %p= program[:content].join('</p><p>').html_safe
