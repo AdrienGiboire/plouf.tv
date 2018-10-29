@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/AdrienGiboire/socicon-rails.git
+  revision: d469bf080ee4fabb229529463d00d41367b71b4b
+  specs:
+    socicon-rails (0.1.0)
+      railties (>= 3.2, < 5.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -249,6 +256,7 @@ DEPENDENCIES
   rails (~> 5.1.6)
   sass-rails (~> 5.0)
   selenium-webdriver
+  socicon-rails!
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
