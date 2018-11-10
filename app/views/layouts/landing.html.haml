@@ -14,14 +14,4 @@
   %body
     = render partial: 'shared/menu'
 
-    %main
-      - if notice || alert
-        %section
-          %article
-            - if notice
-              %p= notice
-
-            - if alert
-              %p= alert
-
-      = yield
+    = yield

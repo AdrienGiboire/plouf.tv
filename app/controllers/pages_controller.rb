@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
-  def home; end
+  def home
+    render layout: 'landing'
+  end
 
   def programmation
     @programs = [
