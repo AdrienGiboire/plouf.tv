@@ -9,7 +9,7 @@ class PagesController < ApplicationController
         title: 'Lundi',
         content: [
           '<strong>20h-00h :</strong> Découverte Inked',
-          'https://youtu.be/X08L9kau-Kw'
+          '<a href="https://youtu.be/X08L9kau-Kw">Vidéo de présentation GoG</a>'
         ],
       },
       {
