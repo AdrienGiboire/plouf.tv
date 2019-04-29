@@ -8,8 +8,6 @@ class PagesController < ApplicationController
       {
         title: 'Lundi',
         content: [
-          '<strong>20h-00h :</strong> Découverte Inked',
-          '<a href="https://youtu.be/X08L9kau-Kw">Vidéo de présentation GoG</a>'
         ],
       },
       {
@@ -19,15 +17,13 @@ class PagesController < ApplicationController
       {
         title: 'Mercredi',
         content: [
-          '<strong>20h :</strong> Cast HL Div 3 Trait Value vs Sauna Tent',
-          '<strong>21h15 :</strong> Cast HL Div 4 PCS-Cronos vs Team Moon Moon',
+          '<strong>20h30 :</strong> Cast HL Div 4 Team Simple Geography vs PCS-Cronos',
         ],
       },
       {
         title: 'Jeudi',
         content: [
-          '<strong>19h :</strong> Cast HL Div 3 ProNubs vs Superfreunde Squad',
-          '<strong>21h :</strong> Cast HL Div 5 The Sops vs MortSure',
+          '<strong>21h30 :</strong> Cast HL Div 3 J\'AI PLUS DE FORCE vs Jormungandr White',
           # '<strong>19h-23h :</strong> Vieilleries mais bonneries',
           # "On remonte le temps et on joue à des jeux qui m'ont bercés même si je ne rentrais déjà plus dans un berceau quand j'ai commencé à jouer.",
         ]
@@ -35,21 +31,19 @@ class PagesController < ApplicationController
       {
         title: 'Vendredi',
         content: [
-          '<strong>19h30 :</strong> Cast HL Div 4 Lost in Draft BTW vs The Art of Warfare',
-          '<strong>21h :</strong> Cast HL Div 2 Mondial Murky Oblivion Real Pro Gamer vs Dragon\'s Nest Community',
+          '<strong>20h30 :</strong> Cast HL Div 3 EterelZ vs Sauna Tent',
         ]
       },
       {
         title: 'Samedi',
         content: [
-          '<strong>20h15 :</strong> Cronos Rumble 12ème édition',
         ]
       },
       {
         title: 'Dimanche',
         content: [
-          '<strong>20h :</strong> Cast HL Div 1 Agnostic About Minion Genocide vs FieryTale',
-          '<strong>23h :</strong> Cast HL Div SnowStorm vs Without Origins',
+          # '<strong>20h à 00h :</strong> Steam Roulette',
+          # 'Session gampelay d\'un jeu ou deux, issus de ma librairie Steam'
         ]
       },
     ]
