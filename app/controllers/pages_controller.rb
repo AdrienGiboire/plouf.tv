@@ -8,43 +8,44 @@ class PagesController < ApplicationController
       {
         title: 'Lundi',
         content: [
+          'Y a personne ! Vas sur <a href="https://www.youtube.com/channel/UC_k22kND7s8Nz7Kor3YyLdQ">YouTube</a> !'
         ],
       },
       {
         title: 'Mardi',
-        content: [],
+        content: [
+          'Y a personne ! Vas sur <a href="https://www.youtube.com/channel/UC_k22kND7s8Nz7Kor3YyLdQ">YouTube</a> !'
+        ],
       },
       {
         title: 'Mercredi',
         content: [
-          '<strong>20h30 :</strong> Cast HL Div 4 Team Simple Geography vs PCS-Cronos',
+          'Y a personne ! Vas sur <a href="https://www.youtube.com/channel/UC_k22kND7s8Nz7Kor3YyLdQ">YouTube</a> !'
         ],
       },
       {
         title: 'Jeudi',
         content: [
-          '<strong>21h30 :</strong> Cast HL Div 3 J\'AI PLUS DE FORCE vs Jormungandr White',
-          # '<strong>19h-23h :</strong> Vieilleries mais bonneries',
-          # "On remonte le temps et on joue à des jeux qui m'ont bercés même si je ne rentrais déjà plus dans un berceau quand j'ai commencé à jouer.",
-        ]
+          'Y a personne ! Vas sur <a href="https://www.youtube.com/channel/UC_k22kND7s8Nz7Kor3YyLdQ">YouTube</a> !'
+        ],
       },
       {
         title: 'Vendredi',
         content: [
-          '<strong>20h30 :</strong> Cast HL Div 3 EterelZ vs Sauna Tent',
-        ]
+          'Y a personne ! Vas sur <a href="https://www.youtube.com/channel/UC_k22kND7s8Nz7Kor3YyLdQ">YouTube</a> !'
+        ],
       },
       {
         title: 'Samedi',
         content: [
-        ]
+          'Y a personne ! Vas sur <a href="https://www.youtube.com/channel/UC_k22kND7s8Nz7Kor3YyLdQ">YouTube</a> !'
+        ],
       },
       {
         title: 'Dimanche',
         content: [
-          # '<strong>20h à 00h :</strong> Steam Roulette',
-          # 'Session gampelay d\'un jeu ou deux, issus de ma librairie Steam'
-        ]
+          'Y a personne ! Vas sur <a href="https://www.youtube.com/channel/UC_k22kND7s8Nz7Kor3YyLdQ">YouTube</a> !'
+        ],
       },
     ]
   end
