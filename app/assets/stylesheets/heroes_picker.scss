@@ -1,0 +1,31 @@
+p.hint {
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+
+.button-wrapper {
+  text-align: center;
+  button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: 1px solid #4CAF50;
+    padding: 8px 16px;
+    vertical-align: middle;
+
+    &::focus, &::hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+  }
+}
+
+.random-hero, .hero {
+  margin: 3px;
+  text-align: center;
+}
+
+.heroes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}

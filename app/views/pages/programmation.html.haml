@@ -1,8 +1,7 @@
-%main
-  %section
-    - @programs.each.with_index do |program, index|
-      - next if program[:content].empty?
+%section
+  - @programs.each.with_index do |program, index|
+    - next if program[:content].empty?
 
-      %article.one-third
-        %strong= program[:title]
-        %p= program[:content].join('</p><p>').html_safe
+    %article.one-third
+      %strong= program[:title]
+      %p= program[:content].join('</p><p>').html_safe

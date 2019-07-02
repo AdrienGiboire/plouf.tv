@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
+  get :heroes_picker, to: 'heroes_picker#index'
+
   get :programmation, to: 'pages#programmation'
 
   get :salty_ranked, to: 'salty_ranked#index'

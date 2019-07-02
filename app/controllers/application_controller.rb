@@ -9,6 +9,7 @@ private
     @items = {
       internal_links: [
         ['/programmation', 'Programmation'],
+        ['/heroes_picker', 'Heroes Picker'],
         ['/salty_ranked', 'Classée Salée'],
       ],
       socials: [
