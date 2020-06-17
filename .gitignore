@@ -30,3 +30,5 @@ config/secrets.yml
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+puma_cert.pem
+puma_key.pem
