@@ -21,7 +21,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'haml'
-gem 'socicon-rails', github: 'AdrienGiboire/socicon-rails'
+gem 'socicon-rails'
 
 gem 'devise'
 gem 'omniauth-twitch'
