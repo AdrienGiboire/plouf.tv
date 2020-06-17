@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:AdrienGiboire/plouf.tv.git"
 
 set :passenger_restart_with_touch, true
 
-set :chruby_ruby, "2.5.3"
+set :chruby_ruby, "2.6.5"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
