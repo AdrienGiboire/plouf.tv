@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/AdrienGiboire/socicon-rails.git
-  revision: d469bf080ee4fabb229529463d00d41367b71b4b
-  specs:
-    socicon-rails (0.1.0)
-      railties (>= 3.2, < 5.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -153,7 +146,7 @@ GEM
     orm_adapter (0.5.0)
     pg (1.1.4)
     public_suffix (3.0.3)
-    puma (3.12.1)
+    puma (3.12.6)
     rack (2.0.7)
     rack-proxy (0.6.5)
       rack
@@ -211,6 +204,8 @@ GEM
     selenium-webdriver (3.141.5926)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
+    socicon-rails (1.0.0)
+      railties (>= 3.2)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -273,12 +268,12 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   omniauth-twitch
   pg
-  puma (~> 3.7)
+  puma (~> 3.12)
   rails (~> 5.1.6)
   react-rails
   sass-rails (~> 5.0)
   selenium-webdriver
-  socicon-rails!
+  socicon-rails
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
